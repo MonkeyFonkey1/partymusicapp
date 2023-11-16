@@ -41,16 +41,31 @@ body, h1, p, ul {
   border-radius: 20px;
   }
   
-  input[type="text"] {
-    background-color: rgb(11, 246, 226);
-    width: 200px;
-    padding: 8px;
-    margin-bottom: 30px;
+  .search-container{
+    position: realtive;
+    display: inline-block;
+  }
+
+  .search-container button {
+    padding: 0px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .search-container img {
+    width: 20px; /* Adjust the size as needed */
+    height: 20px;
+    vertical-align: middle; /* Align the image vertically with the text */
+  }
+
+  .search-container button:active img{
+    filter:brightness(70%);
   }
   
   .list_box {
     background-color: #333;
     padding: 10px;
+    margin-top: 20px;
     overflow-y: auto;
     max-height: 200px; /* Adjust as needed */
   }

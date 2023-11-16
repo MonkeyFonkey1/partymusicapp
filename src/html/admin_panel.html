@@ -21,9 +21,17 @@
 
     <div id="parties_display_box" class="display_box">
         PARTIES
-        <input type="text" placeholder="party title ..">
+        <div class="search-container">
+            <input type="text" placeholder="party title ..">
+            <button type="button">
+                <img src="/src/images/AdminPanel/search_icon.jpg" alt="Search">
+            </button>
+        </div>
+
         <div class="list_box" id="parties_list_box" >
-            <ul id="all_party_list" class="all_elements_list"></ul>
+            <ul id="all_party_list" class="all_elements_list">
+                <li class="list-item"></li>
+            </ul>
         </div>
     </div>
 
@@ -31,12 +39,17 @@
 
     <div id="users_display_box" class="display_box">
         USERS
-        <input type="text" placeholder="username ..">
-        <button type="submit"><i class="search_button"></i></button>
-        
+        <div class="search-container">
+            <input type="text" placeholder="username ..">
+            <button type="button">
+                <img src="/src/images/AdminPanel/search_icon.jpg" alt="Search">
+            </button>
+        </div>
 
         <div class="list_box" id="users_lits_box"></div>
-        <ul id="all_user_list" class="all_elements_list"></ul>
+        <ul id="all_user_list" class="all_elements_list">
+            <li class="list-item"></li>
+        </ul>
     </div>
 
 </body>
