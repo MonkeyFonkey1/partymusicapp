@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(93, 51, 100);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Georgia;
+    color: aliceblue; /* Set text color to contrast with the background */
+}
+
+nav {
+    background-color: rgb(35, 124, 224); 
+    color: white;
+    text-align: left;
+    border-radius:25px;
+    padding: 10px;
+}
+
+section {
+    background-color: rgb(21, 47, 45); 
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;/
+}
+
+.user-details, .party-card {
+    background-color: rgb(10, 130, 166); 
+    border: 1px solid #372e2e;
+    border-radius:25px;
+    padding: 15px;
+    margin-bottom: 20px;
+    
+}
+
+.party-card {
+    width: calc(33.33% - 20px); /* Calculate 33.33% width for three parties with margin in between */
+    margin: 0 10px; /* Adjust margin between party cards */
+}

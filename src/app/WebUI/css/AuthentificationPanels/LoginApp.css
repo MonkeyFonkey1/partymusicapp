@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(93, 51, 100);
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-family: Georgia;
+}
+
+.formClass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+button{
+    height: 2.5vh;
+    border: none;
+    margin: 4px 2px;
+    border-radius: 10px;
+    
+}
+
+input{
+    border-radius: 25px;
+    background-color: rgb(11, 246, 226);
+    color: rgb(35, 124, 224);
+    font-weight:normal;
+    font-family: sans-serif;
+    width: 200px;
+    
+}
+
+label{
+    color: aliceblue;
+}
+
+
+.password-mismatch {
+    border: 1.5px solid red;
+}
+
+button:active {
+    transform: translateY(2px); /* Move the button down by 2 pixels when clicked */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+}
+

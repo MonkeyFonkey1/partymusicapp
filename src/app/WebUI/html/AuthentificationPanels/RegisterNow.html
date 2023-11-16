@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="/src/app/WebUI/css/AuthentificationPanels/LoginApp.css" rel="stylesheet"/>
+
+    <script src="/src/app/WebUI/scripts/Authenfication/RegisterScript.js"></script>
+</head>
+<body>
+
+    <div class="formClass">
+        <form action="" >
+
+            <img src="./icon.png" alt="Icon" style="width: 60px; height: 60px; margin-bottom: 10px;">
+            <p style="color: aliceblue;">Register now!</p>
+
+            <label for="username" style="color: aliceblue;">Username:</label>
+            <div>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <label for="email" style="color: aliceblue;">Email:</label>
+            <div>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <label for="password" style="color: aliceblue;">Password:</label>
+            <div>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <label for="confirmPassword" style="color: aliceblue;">Confirm Password:</label>
+            <div>
+                <input type="password" id="confirmPassword" name="confirmPassword" required class="password-mismatch">
+            </div>
+
+            <label for="dateOfBirth" style="color: aliceblue;">Date of Birth:</label>
+            <div>
+                <input type="text" id="dateOfBirth" name="dateOfBirth" pattern="\d{2}/\d{2}/\d{4}" placeholder="dd/mm/yyyy" required>
+            </div>
+
+            <button class="RequestPass" onclick="validatePasswordMatch()">Register</button>
+        </form>
+    </div>
+
+</body>
+</html>
