@@ -40,6 +40,13 @@ body, h1, p, ul {
   border: 1px solid #ccc;
   border-radius: 20px;
   }
+
+  .box-title{
+    font-family: Georgia;
+    font-size: large;
+    color: #ccc;
+    margin-bottom: 10px;
+  }
   
   .search-container{
     position: realtive;
