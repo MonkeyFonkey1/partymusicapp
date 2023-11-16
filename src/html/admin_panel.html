@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin_panel</title>
+    <script src="/src/scripts/admin_panel.js"></script>
+    <link rel="stylesheet" type="text/css" href="/src/css/admin_panel.css">
+</head>
+<body>
+
+    <h1 id="admin_title">ADMIN PANEL</h1>
+
+    <div id="admin_dashboard">
+        DASHBOARD
+        <p id="no_ongoing_parties_display">Ongoing parties:</p>
+        <p id="no_total_users_display">Total users:</p>
+    </div>
+
+<br>
+
+    <div id="parties_display_box" class="display_box">
+        PARTIES
+        <input type="text" placeholder="party title ..">
+        <div class="list_box" id="parties_list_box" >
+            <ul id="all_party_list" class="all_elements_list"></ul>
+        </div>
+    </div>
+
+<br>
+
+    <div id="users_display_box" class="display_box">
+        USERS
+        <input type="text" placeholder="username ..">
+        <button type="submit"><i class="search_button"></i></button>
+        
+
+        <div class="list_box" id="users_lits_box"></div>
+        <ul id="all_user_list" class="all_elements_list"></ul>
+    </div>
+
+</body>
+</html>
