@@ -22,13 +22,12 @@ function validatePasswordMatch() {
         passwordInput.value = '';
         confirmPasswordInput.value = '';
     } else {
-        confirmPasswordInput.classList.remove("password-mismatch");
-        console.log("Redirecting to login page");
-        redirectToLoginPage();
+        // console.log("Redirecting to login page");
+        // redirectToLoginPage();
     }
 }
 
-function redirectToLoginPage() {
-    //console.log("Redirecting to login page");
-    window.location.href = "/src/app/WebUI/html/AuthentificationPanels/LoginPage.html";
-}
+// function redirectToLoginPage() {
+//     //console.log("Redirecting to login page");
+//     window.location.href = "/src/app/WebUI/html/AuthentificationPanels/LoginPage.html";
+// }

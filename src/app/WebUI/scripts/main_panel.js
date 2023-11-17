@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function () {
     // Fetch current user ID
     fetch('http://localhost:9090/pma/api/v1/users/userid')
