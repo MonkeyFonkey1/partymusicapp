@@ -1,5 +1,5 @@
 //load dashboard
-    const bearerToken='eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYXZpZDIiLCJpYXQiOjE3MDAyMDcxODcsImV4cCI6MTcwMDIwODYyN30.DABErutZ9scUlbAZuMHyJNQ5KgbYs_4miWod9Vks4Gk'
+    const bearerToken='eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYXZpZDIiLCJpYXQiOjE3MDAyMTQ1MjYsImV4cCI6MTcwMDIxNTk2Nn0.s0qXR_WCbIsnznWWYPBnnk_y7TMkbWQbdK1-rcgZtgA'
 
     fetch(`http://localhost:9090/pma/api/v1/users/all/count`, {
         method: 'GET',
@@ -49,7 +49,10 @@
             })
         }
         else {
-            console.log(parties.title);
+            const listItem=document.createElement('li');
+                listItem.textContent= `${party.title} - owner: ${party.ownerUsername}`;
+
+                partyListElement.appendChild(listItem);
         }
     })
     .catch(error => console.error(`Error fetching all parties`, error));
@@ -76,7 +79,10 @@
             })
         }
         else {
-            console.log(users.username);
+            const listItem=document.createElement('li');
+                listItem.textContent= `${users.username} - owner: ${users.email}`;
+
+                partyListElement.appendChild(listItem);
         }
     })
     .catch(error => console.error(`Error fetching all users`, error));
