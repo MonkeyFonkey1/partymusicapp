@@ -1,5 +1,5 @@
 //load dashboard
-    const bearerToken='eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYXZpZDIiLCJpYXQiOjE3MDAyMDcxODcsImV4cCI6MTcwMDIwODYyN30.DABErutZ9scUlbAZuMHyJNQ5KgbYs_4miWod9Vks4Gk'
+    const bearerToken='eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYXZpZCIsImlhdCI6MTcwMDIxNzcwOCwiZXhwIjoxNzAwMjE5MTQ4fQ.yZJyUbjrYblfSF20q4cFb2KmcPlORrbkv0gkbY_p1gE'
 
     fetch(`http://localhost:9090/pma/api/v1/users/all/count`, {
         method: 'GET',
