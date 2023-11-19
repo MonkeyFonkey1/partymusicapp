@@ -1,5 +1,5 @@
 
-const bearerToken = 'eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYXZpZCIsImlhdCI6MTcwMDMzMTQzOSwiZXhwIjoxNzAwMzMyODc5fQ.zIQxlnClOANZi8chEGLimKzm-ofJ2tB8OgkS1KniKXw'; // Replace with your actual bearer token
+const bearerToken = 'eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYXZpZCIsImlhdCI6MTcwMDM5NTAwMywiZXhwIjoxNzAwMzk2NDQzfQ.wKbttS5MgxLQoia69q4RVH73WjVMTZbgwjiMhB1v0hU'; // Replace with your actual bearer token
 
 // Fetch user data
 fetch('http://localhost:9090/pma/api/v1/users/all', {
@@ -11,15 +11,17 @@ fetch('http://localhost:9090/pma/api/v1/users/all', {
 })
     .then(response => response.json())
     .then(users => {
-        // Update elements for each user in the array
-        users.forEach(user => {
-            document.getElementById("username-homepage").innerText = `Username: @${user.username} `;
+        if (Array.isArray(users) && users.length > 0) {
+            const user = users[0]; // Assuming you want to access the first user in the array
             document.getElementById("username-placeholder").innerText = user.username;
+            document.getElementById("username-homepage").innerText =`Username: @${user.username}`; 
             document.getElementById("follower").innerText = `Followers: ${user.noOfFollowers}`;
             document.getElementById("following").innerText = `Following: ${user.noOfFollowing}`;
             document.getElementById("parties_hosted").innerText = `Parties Hosted: ${user.noOfHostedParties}`;
             document.getElementById("parties_participated").innerText = `Parties Participated: ${user.noOfJoinedParties}`;
-        });
+        } else {
+            console.error('No user data available');
+        }
     })
         .catch(error => console.error('Error fetching user data:', error));
 
