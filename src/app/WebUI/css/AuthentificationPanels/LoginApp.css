@@ -45,3 +45,6 @@ button:active {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
 }
 
+.question_account{
+    color: aliceblue;
+}
