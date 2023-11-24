@@ -1,0 +1,91 @@
+body{
+    background-color: rgb(93, 51, 100);
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-family: Georgia;
+}
+
+p{
+    color:#ccc;
+}
+
+#party-title{
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+}
+
+.song-box{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 400px;
+    background-color: rgb(95, 71, 99);
+    padding: 10px;
+    margin: 30px;
+    border: 1px solid #000;
+}
+
+.song-thumbnail{
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top:10px;
+    border: 3px solid salmon;
+}
+
+.song-title{
+    color: #ecbaba;
+}
+
+.song-author{
+    float: right;
+    padding-right: 10%;
+}
+
+.song-sugester{
+    padding-top: 9%;
+    padding-left: 150px;
+}
+
+#top-song-box{
+    width: 500px;
+}
+
+#top-song-label{
+    float: inline-start;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px;
+    border: 5px solid rgb(255, 0, 98);
+    color: #fff;
+}
+
+#suggest-song-button{
+    position:absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    background-color: blueviolet;
+    color: rgb(106, 167, 185);
+    text-decoration: double;
+    font-size: large;
+    font-style: bold;
+}
+
+#song-chart{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

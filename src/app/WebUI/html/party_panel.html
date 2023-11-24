@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Party_panel</title>
     <script src="/src/app/WebUI/scripts/party_panel.js"></script>
     <link rel="stylesheet" type="text/css" href="/src/app/WebUI/css/party_panel.css">
 </head>
@@ -12,9 +12,9 @@
     
     <h1 id="party-title">Party Title</h1>
 
-    <div id="top-song-box">
+    <div id="top-song-box" class="song-box">
         <label id="top-song-label">TOP Song</label>
-        <img src="" alt="thumbnail">
+        <img class="song-thumbnail" alt="thumbnail">
         <h3 id="top-song-title" class="song-title">SongTitle</h3>
         <p id="top-song-author" class="song-author">author</p>
         <p id="top-song-suggester" class="song-sugester">sugester</p>
@@ -22,7 +22,14 @@
 
     <button id="suggest-song-button">SUGGEST</button>
 
-    <ol id="song-chart"></ol>
+    <ol start="2" id="song-chart">
+        <li class="song-box">
+            <img class="song-thumbnail" alt="thumbnail">
+            <h3 id="top-song-title" class="song-title">SongTitle</h3>
+            <p id="top-song-author" class="song-author">author</p>
+            <p id="top-song-suggester" class="song-sugester">sugester</p>
+        </li>
+    </ol>
 
 </body>
 </html>
