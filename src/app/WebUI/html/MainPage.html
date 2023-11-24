@@ -9,41 +9,38 @@
 </head>
 <body>
 
+
+    
     <!-- Navigation bar -->
     <nav>
         <p style="text-align: center; font-size: xx-large;">Home Page</p>
         <img src="/src/app/WebUI/images/MainPanel/pfp.webp" alt="Icon" style="width: 60px; height: 60px; margin-bottom: 10px;">
        <div>
-            <label for="username" style="color: aliceblue;">Username:</label>
-            <div>
-                <label for="name" style="color: aliceblue;">Fullname:</label>
-            </div>
-
-            
+            <label for="username" id="username-homepage" style="color: aliceblue;">Username:</label>         
        </div>
         
     </nav>
 
     <!-- User details section -->
-    <h2>Welcome, <span id="username-placeholder">[Username]</span>!</h2>
-    <div class="user-details">
-        <p id="follower">Followers: [Number]</p>
-        <p id="following">Following: [Number]</p>
-        <p id="parties_hosted">Parties Hosted: [Number]</p>
-        <p id="parties participated">Parties Participated: [Number]</p>
-    </div>
+    <h2>Welcome, <span id="username-placeholder"> </span>!</h2>
+<div class="user-details">
+    <p id="follower">Followers:</p>
+    <p id="following">Following:</p>
+    <p id="parties_hosted">Parties Hosted:</p>
+    <p id="parties_participated">Parties Participated:</p>
+</div>
     
     <!-- Current parties section -->
     <section id="parties">
         <h2>Current Parties</h2>
 
-        <!-- Example party card -->
         <div class="party-card">
-            <a href="partyPage.html" id="partyPage" style="text-align: center;">[partyTitle]</a>
+            <!-- <a href="partyPage.html" id="partyPage" style="text-align: center;">[partyTitle]</a> -->
+            <div class="list_box" id="parties_list_box" >
+                <ul id="all_party_list" class="all_elements_list"></ul>
+            </div>
         </div>
         
-
-        <!-- Repeat the party card structure for each current party -->
         
     </section>
 

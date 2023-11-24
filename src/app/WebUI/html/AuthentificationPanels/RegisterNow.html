@@ -19,12 +19,12 @@
 
             <label for="username" style="color: aliceblue;">Username:</label>
             <div>
-                <input type="text" id="username" name="username" required>
+                <input type="text" id="username" name="username"   autocomplete="username"  required>
             </div>
 
             <label for="email" style="color: aliceblue;">Email:</label>
             <div>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" autocomplete="email" required>
             </div>
 
             <label for="password" style="color: aliceblue;">Password:</label>
@@ -37,12 +37,12 @@
                 <input type="password" id="confirmPassword" name="confirmPassword" required>
             </div>
 
-            <label for="dateOfBirth" style="color: aliceblue;">Date of Birth:</label>
+            <!-- <label for="dateOfBirth" style="color: aliceblue;">Date of Birth:</label>
             <div>
                 <input type="text" id="dateOfBirth" name="dateOfBirth" pattern="\d{2}/\d{2}/\d{4}" placeholder="dd/mm/yyyy" required>
-            </div>
+            </div> -->
 
-            <button class="RequestPass" onclick="validatePasswordMatch()">Register</button>
+            <button class="RequestPass" onclick="registerUser()">Register</button>
         </form>
     </div>
 
